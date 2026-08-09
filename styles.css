@@ -1,0 +1,50 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --grey: rgb(226, 232, 240);
+  --blue: rgb(25, 146, 212);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  line-height: 1.5;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+#wrapper {
+  display: grid;
+  grid-template: 60px 100px 1fr / 1fr 4fr;
+  grid-template-areas:
+    "top-level-heading header"
+    "sidebar header"
+    "sidebar main";
+  height: 100%;
+}
+
+header {
+  background: var(--white);
+  grid-area: header;
+}
+
+aside, h1, a {
+  background: var(--blue);
+  color: var(--white);
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+h1 {
+  grid-area: top-level-heading;
+}
+
+main {
+  background: var(--grey);
+  grid-area: main;
+}
