@@ -18,7 +18,7 @@ body {
 
 #wrapper {
   display: grid;
-  grid-template: 60px 100px 1fr / 1fr 4fr;
+  grid-template: 80px 80px 1fr / 1fr 4fr;
   grid-template-areas:
     "top-level-heading header"
     "sidebar header"
@@ -27,24 +27,48 @@ body {
 }
 
 header {
-  background: var(--white);
+  background-color: var(--white);
   grid-area: header;
 }
 
-aside, h1, a {
-  background: var(--blue);
+aside,
+h1,
+aside a {
+  background-color: var(--blue);
   color: var(--white);
-}
-
-aside {
-  grid-area: sidebar;
 }
 
 h1 {
   grid-area: top-level-heading;
+  padding: 15px 20px;
+}
+
+aside {
+  grid-area: sidebar;
+  padding-top: 15px;
+
+  & a {
+    text-decoration: none;
+  }
+
+  & li {
+    list-style-type: none;
+  }
+
+  & ul {
+    padding-left: 27px;
+    display: grid;
+    gap: 45px;
+    font-weight: bold;
+
+    & div {
+      display: grid;
+      gap: 10px;
+    }
+  }
 }
 
 main {
-  background: var(--grey);
+  background-color: var(--grey);
   grid-area: main;
 }
