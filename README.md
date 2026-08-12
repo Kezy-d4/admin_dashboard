@@ -2,7 +2,7 @@
 
 This is a mock admin dashboard made to practice with CSS grid and HTML/CSS in general.
 See the [project spec](https://www.theodinproject.com/lessons/intermediate-html-and-css-admin-dashboard)
-and [live demo](placeholder).
+and [live demo](https://kezy-d4.github.io/admin_dashboard/).
 
 <img width="1920" height="1080" alt="admin_dashboard_showcase" src="https://github.com/user-attachments/assets/0f8bf626-58de-48a0-a856-aebbfa254322" />
 
